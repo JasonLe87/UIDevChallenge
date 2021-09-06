@@ -1,0 +1,45 @@
+{
+  "name": "ReactBoilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run watch:css && webpack -w",
+    "start": "nodemon ./server",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "autoprefixer": "^10.3.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "framer-motion": "^4.1.17",
+    "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
+    "node-sass": "^6.0.0",
+    "path": "^0.12.7",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.2.9",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "chart.js": "^3.5.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-jss": "^10.7.1"
+  }
+}
